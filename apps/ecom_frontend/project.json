@@ -2,7 +2,7 @@
   "name": "ecom_frontend",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "app",
+  "prefix": "ecom",
   "sourceRoot": "apps/ecom_frontend/src",
   "tags": [],
   "targets": {
