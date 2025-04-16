@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { NavbarComponent } from './navbar.component';
+import { beforeEach, describe, it } from 'node:test';
 
 describe('NavbarComponent', () => {
   let component: NavbarComponent;
@@ -16,6 +17,7 @@ describe('NavbarComponent', () => {
   });
 
   it('should create', () => {
+    // @ts-ignore
     expect(component).toBeTruthy();
   });
 });
