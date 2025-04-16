@@ -6,9 +6,11 @@ import {
   FaIconLibrary,
 } from '@fortawesome/angular-fontawesome';
 import { fontAwesomeIcons } from './shared/font-awesome';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @Component({
-  imports: [RouterModule, FaIconComponent],
+  imports: [RouterModule, FaIconComponent, NavbarComponent, FooterComponent],
   selector: 'ecom-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
