@@ -1,6 +1,6 @@
 package com.shop.ecom.shared.authentication.infrastructure.primary;
 
-
+import com.shop.ecom.shared.authentication.application.AuthenticatedUser;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.lang.NonNull;
 import org.springframework.security.authentication.AbstractAuthenticationToken;
@@ -15,7 +15,9 @@ import java.util.Collection;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+// The main goal is to convert a decoded JWT into an authenticated object
 public class KindeJwtAuthenticationConverter implements Converter<Jwt, AbstractAuthenticationToken> {
+  // to create an authenticated object from token
   @Override
   public AbstractAuthenticationToken convert(@NonNull Jwt source) {
     return new JwtAuthenticationToken(source,
@@ -29,3 +31,4 @@ public class KindeJwtAuthenticationConverter implements Converter<Jwt, AbstractA
       .map(SimpleGrantedAuthority::new)
       .collect(Collectors.toSet());
   }
+}
