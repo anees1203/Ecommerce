@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 public record Roles(Set<Role> roles) {
 
-  public static final Roles EMPTY = new Roles(null);
+  public static final Roles EMPTY = new Roles(Collections.emptySet());
 
   public Roles(Set<Role> roles) {
     this.roles = Collections.unmodifiableSet(roles);
