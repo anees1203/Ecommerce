@@ -1,6 +1,8 @@
 package com.shop.ecom.shared.authentication.domain;
 
 
+import com.shop.ecom.shared.error.domain.Assert;
+
 import java.util.Collections;
 import java.util.Set;
 import java.util.stream.Stream;
