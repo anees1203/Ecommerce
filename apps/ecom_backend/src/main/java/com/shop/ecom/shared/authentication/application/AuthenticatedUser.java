@@ -4,6 +4,7 @@ import com.nimbusds.jose.shaded.gson.internal.LinkedTreeMap;
 import com.shop.ecom.shared.authentication.domain.Role;
 import com.shop.ecom.shared.authentication.domain.Roles;
 import com.shop.ecom.shared.authentication.domain.Username;
+import com.shop.ecom.shared.error.domain.Assert;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
