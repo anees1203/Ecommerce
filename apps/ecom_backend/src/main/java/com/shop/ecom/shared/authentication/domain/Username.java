@@ -1,5 +1,6 @@
 package com.shop.ecom.shared.authentication.domain;
 
+import com.shop.ecom.shared.error.domain.Assert;
 import io.micrometer.common.util.StringUtils;
 
 import java.util.Optional;

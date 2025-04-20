@@ -1,8 +1,11 @@
 package com.shop.ecom.shared.authentication.domain;
 
+import com.shop.ecom.shared.error.domain.Assert;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public enum Role {
