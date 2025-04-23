@@ -44,6 +44,13 @@ public class User {
     Assert.notNull("authorities", authorities);
   }
 
+  public void updateFromUser(User user) {
+    this.email = user.email;
+    this.imageUrl = user.imageUrl;
+    this.firstname = user.firstname;
+    this.lastname = user.lastname;
+  }
+
   public void initFieldForSignup(){
     this.userPublicId = new UserPublicId(UUID.randomUUID());
   }

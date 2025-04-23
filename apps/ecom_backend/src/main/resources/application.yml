@@ -50,8 +50,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: https://codecake.kinde.com
-          jwk-set-uri: https://codecake.kinde.com/.well-known/jwks
+          issuer-uri: https://shopecom.kinde.com
+          jwk-set-uri: https://shopecom.kinde.com/.well-known/jwks
           audiences: http://localhost:8080/api
   devtools:
     restart:
@@ -77,10 +77,10 @@ application:
     allow-credentials: false
     max-age: 300
   kinde:
-    api: https://codecake.kinde.com
+    api: https://shopecom.kinde.com
     client-id: ${KINDE_CLIENT_ID}
     client-secret: ${KINDE_CLIENT_SECRET}
-    audience: https://codecake.kinde.com/api
-  stripe:
-    api-key: ${STRIPE_API_KEY}
-    webhook-secret: ${STRIPE_WEBHOOK_SECRET}
+    audience: https://shopecom.kinde.com/api
+#  stripe:
+#    api-key: ${STRIPE_API_KEY}
+#    webhook-secret: ${STRIPE_WEBHOOK_SECRET}
